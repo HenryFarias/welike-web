@@ -7,23 +7,23 @@ class Map extends React.Component {
     }
 
     componentDidMount() {
-        var map = new google.maps.Map(document.getElementById('map'), {
+        let map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: -13.7033101, lng: -69.6797954 },
             zoom: 1
-        })
+        });
 
         if (this.props.location.value && this.props.radius.value) {
-            var radius = this.props.radius.value
-            var geocoder = new google.maps.Geocoder();
+            let radius = this.props.radius.value;
+            let geocoder = new google.maps.Geocoder();
             geocoder.geocode({ 'address': this.props.location.value }, function (results, status) {
                 if (status === 'OK') {
                     map.setCenter(results[0].geometry.location)
                     map.setZoom(10)
-                    var marker = new google.maps.Marker({
+                    let marker = new google.maps.Marker({
                         map: map,
                         position: results[0].geometry.location
                     });
-                    var cityCircle = new google.maps.Circle({
+                    let cityCircle = new google.maps.Circle({
                         strokeColor: '#e64a67',
                         strokeOpacity: 0.8,
                         strokeWeight: 2,

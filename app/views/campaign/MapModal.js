@@ -7,9 +7,10 @@ class MapModal extends React.Component {
     }
 
     render() {
+        console.log(this.props.isOpen);
         return (
             <div>
-                <Modal bsSize="large" show={this.props.isOpen} onHide={this.props.toggleModal}>
+                <Modal size={'lg'} show={this.props.isOpen} onHide={this.props.toggleModal}>
                     <Modal.Header closeButton>
                         <Modal.Title>Mapa</Modal.Title>
                     </Modal.Header>

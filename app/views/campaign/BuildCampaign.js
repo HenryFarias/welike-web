@@ -30,7 +30,7 @@ class Campaign extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12">                            
+                        <div className="col-md-12">
                             <Search updateReferenceList={this.updateReferenceList} />
                         </div>
                     </div>

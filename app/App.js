@@ -1,12 +1,12 @@
 import React from 'react';
-import Dashboard from './components/Dashboard.js';
-import Campaign from './components/Campaign.js';
-import CampaignView from './components/CampaignView.js';
-import CampaignNew from './components/CampaignNew.js';
-import BuildCampaign from './components/campaign/BuildCampaign.js';
-import YoutubeReference from './components/youtube/Index.js';
-import Navbar from './components/layout/Navbar.js';
-import SideBar from './components/layout/SideBar.js';
+import Dashboard from './views/Dashboard.js';
+import Campaign from './views/Campaign.js';
+import CampaignView from './views/CampaignView.js';
+import CampaignNew from './views/CampaignNew.js';
+import BuildCampaign from './views/campaign/BuildCampaign.js';
+import YoutubeReference from './views/youtube/Index.js';
+import Navbar from './views/layout/Navbar.js';
+import SideBar from './views/layout/SideBar.js';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 

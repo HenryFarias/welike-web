@@ -61,3 +61,7 @@
 .modal .modal-header .close {
     color: #f2f2f2;
 }
+
+select option {
+	background: #3f4052;
+}
